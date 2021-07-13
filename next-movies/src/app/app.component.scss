@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.banner {
+  // TODO
+  height: 123px;
+  img {
+  }
+}
+
+.content {
+  background-color: #00d7ff;
+  flex-grow: 1;
+
+  .header {
+    color: #000000;
+    font-family: "Sharp Sans Display No2"; // TODO get font asset and define @font-face
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 66px;
+    letter-spacing: 0px;
+    margin: 105px 25%;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
