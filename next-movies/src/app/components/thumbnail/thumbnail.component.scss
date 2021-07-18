@@ -1,0 +1,41 @@
+// TODO deal with long movie names
+
+:host {
+  display: inline-flex;
+  flex-direction: column;
+  height: 400px;
+  margin-bottom: 60px;
+  width: 166px;
+
+  img {
+    display: block;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    font-family: "GT Alpina"; // TODO get font asset and define @font-face
+    font-size: 1.2em;
+    justify-content: space-between;
+    line-height: 1.25em;
+    letter-spacing: -0.6px;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: left;
+    text-transform: capitalize;
+
+    .rating::before {
+      background-image: url("/assets/star.svg");
+      content: "";
+      display: inline-block;
+      height: 28px;
+      margin-right: 10px;
+      width: 28px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 144px;
+  }
+}

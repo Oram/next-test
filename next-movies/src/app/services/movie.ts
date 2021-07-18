@@ -1,15 +1,15 @@
-// the server returns more data, but for simplicity I only added to the interface the stuff that is being used in the assignment
+// The server returns more data, but for simplicity I only added to the interface the stuff that is being used in the assignment
+// All the types are string for simplicity
 export interface Movie {
-  id: '207856';
+  id: string;
   title: string;
   image: string;
   synopsis: string;
-  rating: '8.3';
-  type: 'movie';
-  released: '1968';
-  runtime: '2h28m';
+  rating: string;
+  released: string;
+  runtime: string;
   largeimage: string;
-  unogsdate: '2020-06-18';
-  imdbid: 'tt0062622';
-  download: '0';
+  unogsdate: string;
+  imdbid: string;
+  download: string;
 }

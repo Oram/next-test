@@ -1,1 +1,8 @@
-<p>thumbnail works!</p>
+<img [src]="src" onerror="this.onerror=null;this.src='https://via.placeholder.com/166X233.png?text=next';">
+
+<div>
+    <div class="title"><span [innerHTML]="title"></span><span *ngIf="releaseDate">({{releaseDate}})</span></div>
+    <!-- TODO create a separate component for rating -->
+    <div *ngIf="rating" class="rating">{{rating}}</div>
+</div>
+<next-button (click)="readMore()" buttonText="Read more"></next-button>

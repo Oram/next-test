@@ -1,0 +1,23 @@
+div {
+  border: 1px solid #000000;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 17px;
+  cursor: pointer;
+
+  .arrow {
+    background-image: url("/assets/arrow.svg");
+    display: inline-block;
+    height: 14px;
+    width: 25px;
+  }
+
+  &.rtl {
+    flex-direction: row-reverse;
+
+    .arrow {
+      transform: rotate(180deg);
+    }
+  }
+}

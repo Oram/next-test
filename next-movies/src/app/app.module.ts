@@ -16,6 +16,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     AppComponent,
     ThumbnailComponent,
     ButtonComponent,
+    MovieComponent,
     MovieListComponent,
   ],
   imports: [
@@ -27,6 +28,5 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [MovieComponent],
 })
 export class AppModule {}
